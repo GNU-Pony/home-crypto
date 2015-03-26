@@ -6,20 +6,15 @@ Encrypted ~/Private
 /dev/disk/by-label/*
 /dev/disk/by-uuid/*
 loop device
+hostname dependency
 
 passphrase
 keyfile from USB
-keyfile and passphrase
+keyfile and passphrase (file2key)
 authentication information from another process (for display managers)
 
-cryptsetup luksFormat
-cryptsetup luksOpen and mount when not opened/mounted
-cryptsetup luksChangeKey
-cryptsetup-reencrypt
-cryptsetup luksHeaderBackup
-cryptsetup luksHeaderRestore
-unmount cryptsetup close when the user no longer has any logins
-mkfs
+login: cryptsetup luksOpen and mount when not opened/mounted
+logout: unmount cryptsetup close when the user no longer has any logins
 
 warn about non-encrypted swap (/proc/swap)
 
