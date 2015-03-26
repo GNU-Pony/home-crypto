@@ -9,6 +9,7 @@ loop device
 
 passphrase
 keyfile from USB
+keyfile and passphrase
 authentication information from another process (for display managers)
 
 cryptsetup luksFormat
