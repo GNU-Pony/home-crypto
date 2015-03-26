@@ -1,0 +1,24 @@
+Encrypted ~
+Encrypted ~/Private
+
+/dev/sd*
+/dev/disk/by-id/*
+/dev/disk/by-label/*
+/dev/disk/by-uuid/*
+loop device
+
+passphrase
+keyfile from USB
+authentication information from another process (for display managers)
+
+cryptsetup luksFormat
+cryptsetup luksOpen and mount when not opened/mounted
+cryptsetup luksChangeKey
+cryptsetup-reencrypt
+cryptsetup luksHeaderBackup
+cryptsetup luksHeaderRestore
+unmount cryptsetup close when the user no longer has any logins
+mkfs
+
+warn about non-encrypted swap (/proc/swap)
+
