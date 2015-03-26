@@ -1,0 +1,43 @@
+# Home and private directory encryption settings for the user `fictitious`.
+
+#==============================================================================#
+
+
+### The user `fictitious` may use these two files in addition to
+### any file in ~fictitious/ for encrypting her private directories.
+
+assigned: /dev/disk/by-uuid/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+assigned: /dev/disk/by-uuid/yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
+
+
+#==============================================================================#
+
+
+### ~fictitious/ encryption settings.
+### The entries home and directory must come before any associated information.
+
+home: /var/lib/home-crypto/fictitious
+# The device or file on which the home directory is stored.
+
+created: no
+# The home directory has not been encrypted yet.
+
+
+#==============================================================================#
+
+
+### ~fictitious/Private/ encryption settings.
+
+directory: Private
+# The directory is relative to the user's ~, unless it starts with a /.
+
+device: .var/lib/home-crypto/fictitous
+# The device or file for the encrypted image.
+# Telative to the user's ~, unless it starts with a /.
+
+created: no
+# The directory has not been encrypted yet.
+
+
+#==============================================================================#
+
