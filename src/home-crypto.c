@@ -22,23 +22,20 @@
 #include <string.h>
 
 
-#ifndef SYSCONFDIR
-# define SYSCONFDIR  "/etc"
-#endif
-
-#ifndef PKGNAME
-# define PKGNAME  "home-crypto"
-#endif
-
-#ifndef HOME_CRYPTO_CONF_DIR
-# define HOME_CRYPTO_CONF_DIR  SYSCONFDIR "/" PKGNAME ".d"
-#endif
-
-
+/**
+ * The name of the command the process is running as
+ */
 static char* execname;
 
 
 
+/**
+ * Here we go!
+ * 
+ * @param   argc  The number of command line arguments
+ * @param   argv  The command line arguments
+ * @return        Zero on and only on success
+ */
 int main(int argc, char** argv)
 {
   char* action;
